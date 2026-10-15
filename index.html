@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#123a52" name="theme-color"/>
+  <title>
+   TripMate &mdash; Your Smart Travel Planner
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="container nav">
+    <a class="brand" href="#home">
+     <span class="brand-mark">
+      ✦
+     </span>
+     Trip
+     <span>
+      Mate
+     </span>
+    </a>
+    <nav>
+     <a href="#planner">
+      Plan a trip
+     </a>
+     <a href="#trips">
+      My trips
+     </a>
+    </nav>
+    <a class="nav-cta" href="#planner">
+     Start exploring &nearrow;
+    </a>
+   </div>
+  </header>
+  <main>
+   <section class="hero" id="home">
+    <div class="container hero-inner">
+     <div class="hero-copy">
+      <span class="eyebrow">
+       ✦ YOUR NEXT ADVENTURE STARTS HERE
+      </span>
+      <h1>
+       Go places.
+       <br/>
+       <em>
+        Make memories.
+       </em>
+      </h1>
+      <p>
+       Plan beautiful trips in minutes. Organize your dates, discover activity ideas, check the weather, and keep every adventure in one place.
+      </p>
+      <a class="button button-primary" href="#planner">
+       Plan your adventure
+       <span>
+        &nearrow;
+       </span>
+      </a>
+      <div class="hero-stats">
+       <div>
+        <strong>
+         01
+        </strong>
+        <span>
+         Choose your place
+        </span>
+       </div>
+       <div>
+        <strong>
+         02
+        </strong>
+        <span>
+         Build your plan
+        </span>
+       </div>
+       <div>
+        <strong>
+         03
+        </strong>
+        <span>
+         Enjoy the journey
+        </span>
+       </div>
+      </div>
+     </div>
+     <div aria-label="Decorative travel landscape" class="hero-art">
+      <div class="sun">
+      </div>
+      <div class="mountain mountain-back">
+      </div>
+      <div class="mountain mountain-front">
+      </div>
+      <div class="art-label">
+       THE WORLD IS WAITING
+       <span>
+        &nearrow;
+       </span>
+      </div>
+      <div class="art-sticker">
+       ✈
+       <small>
+        ADVENTURE
+        <br/>
+        AHEAD
+       </small>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section planner-section" id="planner">
+    <div class="container">
+     <div class="section-heading">
+      <span class="eyebrow">
+       THE TRIP PLANNER
+      </span>
+      <h2>
+       Where to
+       <em>
+        next?
+       </em>
+      </h2>
+      <p>
+       A few details are all you need to get started.
+      </p>
+     </div>
+     <div class="planner-layout">
+      <form class="panel form-panel" id="tripForm">
+       <div class="panel-title">
+        <span class="step">
+         01
+        </span>
+        <div>
+         <h3>
+          Let's plan your getaway
+         </h3>
+         <p>
+          Tell us about your upcoming adventure.
+         </p>
+        </div>
+       </div>
+       <label for="destination">
+        Destination
+        <span>
+         *
+        </span>
+       </label>
+       <input id="destination" maxlength="80" name="destination" placeholder="e.g. Hunza, Paris, Tokyo" required=""/>
+       <div class="field-grid">
+        <div>
+         <label for="startDate">
+          Start date
+          <span>
+           *
+          </span>
+         </label>
+         <input id="startDate" name="startDate" required="" type="date"/>
+        </div>
+        <div>
+         <label for="endDate">
+          End date
+          <span>
+           *
+          </span>
+         </label>
+         <input id="endDate" name="endDate" required="" type="date"/>
+        </div>
+       </div>
+       <div class="field-grid">
+        <div>
+         <label for="travelers">
+          Travelers
+         </label>
+         <input id="travelers" max="30" min="1" name="travelers" required="" type="number" value="2"/>
+        </div>
+        <div>
+         <label for="budget">
+          Total budget (USD)
+         </label>
+         <input id="budget" min="0" name="budget" placeholder="Optional" step="1" type="number"/>
+        </div>
+       </div>
+       <label for="travelStyle">
+        Your travel vibe
+       </label>
+       <select id="travelStyle" name="travelStyle">
+        <option value="adventure">
+         Adventure &amp; outdoors
+        </option>
+        <option value="culture">
+         Culture &amp; history
+        </option>
+        <option value="relaxation">
+         Relax &amp; recharge
+        </option>
+        <option value="food">
+         Food &amp; local life
+        </option>
+       </select>
+       <p aria-live="polite" class="form-error" id="formError" role="alert">
+       </p>
+       <button class="button button-primary full-width" type="submit">
+        Create my trip
+        <span>
+         &nearrow;
+        </span>
+       </button>
+       <p class="form-footnote">
+        ✦ Your trips are saved privately in this browser.
+       </p>
+      </form>
+      <aside class="inspiration">
+       <div class="inspiration-top">
+        <span class="eyebrow">
+         A LITTLE INSPIRATION
+        </span>
+        <h3>
+         Collect moments,
+         <br/>
+         <em>
+          not things.
+         </em>
+        </h3>
+        <p>
+         From mountain mornings to city nights, make space for the experiences that matter.
+        </p>
+       </div>
+       <div class="inspiration-bottom">
+        <div class="inspo-circle">
+         ✈
+        </div>
+        <span>
+         YOUR STORY IS OUT THERE
+         <br/>
+         <strong>
+          GO FIND IT.
+         </strong>
+        </span>
+       </div>
+      </aside>
+     </div>
+    </div>
+   </section>
+   <section class="section trips-section" id="trips">
+    <div class="container">
+     <div class="trips-header">
+      <div>
+       <span class="eyebrow">
+        YOUR ADVENTURES
+       </span>
+       <h2>
+        My
+        <em>
+         trips.
+        </em>
+       </h2>
+      </div>
+      <span class="count-pill" id="tripCount">
+       0 trips
+      </span>
+     </div>
+     <div aria-live="polite" class="trips-grid" id="tripsList">
+     </div>
+    </div>
+   </section>
+  </main>
+  <dialog class="trip-dialog" id="tripDialog">
+   <div class="dialog-head">
+    <div>
+     <span class="eyebrow">
+      YOUR TRAVEL GUIDE
+     </span>
+     <h2 id="dialogTitle">
+      Trip details
+     </h2>
+    </div>
+    <button aria-label="Close trip details" class="icon-button" id="closeDialog">
+     ✕
+    </button>
+   </div>
+   <div id="dialogBody">
+   </div>
+  </dialog>
+  <footer>
+   <div class="container footer-inner">
+    <a class="brand" href="#home">
+     <span class="brand-mark">
+      ✦
+     </span>
+     Trip
+     <span>
+      Mate
+     </span>
+    </a>
+    <p>
+     Made for the curious. Built for the journey.
+    </p>
+    <span>
+     &copy;
+     <span id="year">
+     </span>
+     TripMate
+    </span>
+   </div>
+  </footer>
+  <script defer="" src="script.js">
+  </script>
+ </body>
+</html>
+
